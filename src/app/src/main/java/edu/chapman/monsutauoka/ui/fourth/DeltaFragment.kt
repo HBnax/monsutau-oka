@@ -29,8 +29,8 @@ class DeltaFragment : Fragment() {
         Log.d(TAG, ::onViewCreated.name)
 
         binding.buttonSaveName.setOnClickListener {
-            val name = binding.textDelta.text.toString()
-            Log.i(TAG, "Current name: $name")
+            var name = binding.textDelta.text.toString()
+            Log.i(TAG, "Current name: " + name)
         }
     }
 
