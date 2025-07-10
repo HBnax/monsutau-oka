@@ -8,4 +8,5 @@
     <string name="decrement">Decrement</string>
     <string name="increment">Increment</string>
     <string name="_0">0</string>
+    <string name="name">name</string>
 </resources>
