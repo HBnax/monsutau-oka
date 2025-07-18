@@ -16,10 +16,12 @@ import edu.chapman.monsutauoka.services.sensors.MockStepSensorManager
 import edu.chapman.monsutauoka.services.sensors.RealStepSensorManager
 import edu.chapman.monsutauoka.services.data.SharedPreferencesDataStore
 import edu.chapman.monsutauoka.services.StepCounterService
+import edu.chapman.monsutauoka.services.berriCounterService
 import edu.chapman.monsutauoka.services.sensors.StepSensorManager
 
 class MainActivity : AppCompatActivity() {
     private lateinit var stepCounterService: StepCounterService
+    private lateinit var berriCounterService: berriCounterService
     private lateinit var stepSensorManager: StepSensorManager
     private lateinit var binding: ActivityMainBinding
 
@@ -84,8 +86,16 @@ class MainActivity : AppCompatActivity() {
         stepCounterService.updateSteps(newStepCount)
         Log.v(TAG, newStepCount.toString())
     }
+    fun updateBerris(newBerriCount: Int){
+        berriCounterService.updateBerris(newBerriCount)
+        Log.v(TAG, newBerriCount.toString())
+    }
 
     fun getStepCounterService(): StepCounterService {
         return stepCounterService
     }
+    fun getBerriCounterService(): berriCounterService{
+        return berriCounterService
+    }
+
 }
