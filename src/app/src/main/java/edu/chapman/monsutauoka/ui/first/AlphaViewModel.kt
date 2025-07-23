@@ -20,4 +20,11 @@ class AlphaViewModel : ViewModel() {
 
         initialized = true
     }
+
+    fun berriCreation(service: StepCounterService): Float {
+
+        var _berri: Float = _steps.value / 1000_00
+
+        return _berri
+    }
 }

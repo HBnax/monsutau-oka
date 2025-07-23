@@ -16,7 +16,6 @@ import edu.chapman.monsutauoka.services.sensors.MockStepSensorManager
 import edu.chapman.monsutauoka.services.sensors.RealStepSensorManager
 import edu.chapman.monsutauoka.services.data.SharedPreferencesDataStore
 import edu.chapman.monsutauoka.services.StepCounterService
-import edu.chapman.monsutauoka.services.berriCounterService
 import edu.chapman.monsutauoka.services.sensors.StepSensorManager
 
 class MainActivity : AppCompatActivity() {
